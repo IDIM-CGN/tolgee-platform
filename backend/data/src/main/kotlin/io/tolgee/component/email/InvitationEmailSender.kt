@@ -20,7 +20,7 @@ class InvitationEmailSender(
     val params =
       EmailParams(
         to = email,
-        subject = "Invitation to Tolgee",
+        subject = "Invitation to Translations",
         text =
           """
           Hello! 👋<br/><br/>
@@ -28,9 +28,10 @@ class InvitationEmailSender(
           
           To accept the invitation, <b>follow this link</b>:<br/>
           <a href="$url">$url</a><br/><br/>
+          Please register with the same email address you received this invitation. After registration and login you should be able to access the project.<br/><br/>
           
           Regards,<br/>
-          Tolgee
+          Translations
           """.trimIndent(),
       )
     tolgeeEmailSender.sendEmail(params)
@@ -51,7 +52,7 @@ class InvitationEmailSender(
         ?: throw IllegalStateException("Both the organization and the project are null??")
 
     val escapedName = HtmlUtils.htmlEscape(name)
-    return "You have been invited to $toWhat $escapedName in Tolgee."
+    return "You have been invited to $toWhat $escapedName."
   }
 
   private fun getInvitationAcceptUrl(code: String): String {
