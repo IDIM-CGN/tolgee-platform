@@ -3,9 +3,5 @@ import { useTranslate, T } from '@tolgee/react';
 
 export function TolgeeMore() {
   const { t } = useTranslate();
-  return (
-    <Box mb={2}>
-    
-    </Box>
-  );
+  return ();
 }
