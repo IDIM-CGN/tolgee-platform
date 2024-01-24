@@ -95,7 +95,7 @@ open class TolgeeProperties(
   var frontEndUrl: String? = null,
   var websocket: WebsocketProperties = WebsocketProperties(),
   @DocProperty(description = "Name of the application.", hidden = true)
-  var appName: String = "Tolgee",
+  var appName: String = "Translations",
   @DocProperty(description = "Maximum length of translations.")
   open var maxTranslationTextLength: Long = 10000,
   @DocProperty(
