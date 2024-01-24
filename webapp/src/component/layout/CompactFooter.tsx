@@ -45,68 +45,6 @@ const StyledSocialText = styled('span')`
 export const CompactFooter = () => {
   return (
     <StyledContainer>
-      <StyledContent>
-        <StyledSocial>
-          <StyledLink
-            href="https://twitter.com/tolgee_i18n"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TwitterLogo />
-            <StyledSocialText>Twitter</StyledSocialText>
-          </StyledLink>
-        </StyledSocial>
-        <StyledSocial>
-          <StyledLink
-            href="https://www.facebook.com/Tolgee.i18n"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FacebookLogo />
-            <StyledSocialText>Facebook</StyledSocialText>
-          </StyledLink>
-        </StyledSocial>
-        <StyledSocial>
-          <StyledLink
-            href="https://github.com/tolgee/tolgee-platform"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GitHubLogo />
-            <StyledSocialText>GitHub</StyledSocialText>
-          </StyledLink>
-        </StyledSocial>
-        <StyledSocial>
-          <StyledLink
-            href="https://www.linkedin.com/company/tolgee/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedInLogo />
-            <StyledSocialText>LinkedIn</StyledSocialText>
-          </StyledLink>
-        </StyledSocial>
-        <StyledSocial>
-          <StyledLink
-            href="https://tolg.ee/slack"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SlackLogo />
-            <StyledSocialText>Slack</StyledSocialText>
-          </StyledLink>
-        </StyledSocial>
-        <StyledSocial>
-          <StyledLink
-            href="https://github.com/tolgee/tolgee-platform/discussions"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <DiscussionsLogo />
-            <StyledSocialText>Discussions</StyledSocialText>
-          </StyledLink>
-        </StyledSocial>
-      </StyledContent>
     </StyledContainer>
   );
 };
