@@ -22,23 +22,11 @@ class TolgeeEmailSender(
       """
       <html>
       <body style="font-size: 15px">
-      ${params.text}<br/><br/>
-      <img style="max-width: 100%; width:120px" src="cid:logo.png" />
+      ${params.text}
       </body>
       </html>
       """.trimIndent()
     helper.setText(content, true)
-
-    params.attachments.forEach {
-      helper.addAttachment(it.name, it.inputStreamSource)
-    }
-
-    helper.addInline(
-      "logo.png",
-      { ClassPathResource("tolgee-logo.png").inputStream },
-      "image/png",
-    )
-
     mailSender.send(helper.mimeMessage)
   }
 
