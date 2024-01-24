@@ -43,8 +43,5 @@ const StyledSocialText = styled('span')`
 `;
 
 export const CompactFooter = () => {
-  return (
-    <StyledContainer>
-    </StyledContainer>
-  );
+  return ();
 };
